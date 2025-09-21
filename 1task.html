@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>task1</title>
+
+<style>
+
+#login-form{
+
+	width: 600px;
+	margin: auto;
+	background: white;
+	padding: 40px;
+	border-radius: 8px;
+
+
+}
+
+
+#signup-form{
+	width: 600px;
+	margin: auto;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+
+
+}
+
+
+input{
+
+	display: block;
+	margin-bottom: 10px;
+	width: 500px;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+button{
+
+	width: 100px;
+	padding: 10px;
+	background: seagreen;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+	<div id="login-form">
+	<h2>Login</h2>
+	<input type="Email" placeholder="Enter your email"> <br></br>
+	<input type="password" placeholder="Enter your password"><br></br>
+	<button>Login</button>
+	<p>Dont't have an account?<a href="#" onclick="showsignup()">signup</a></p>
+
+
+</div>
+
+<div id="signup-form" style="display: none;">
+<h2>signup</h2>
+<input type="Email" placeholder="Enter your Email"> <br></br>
+<input type="password" placeholder="Create a password"><br></br>
+<input type="password" placeholder="Confirm your password"><br></br>
+<button>Signup</button>
+<p>Already have an account? <a href="#" onclick="Showlogin()">Login</a></p>
+
+</div>
+
+
+
+<script>
+	function showsignup() {
+		document.getElementById("login-form").style.display="none";
+		document.getElementById("signup-form").style.display="block";
+	}
+	
+	function Showlogin() {
+		document.getElementById("signup-form").style.display="none";
+		document.getElementById("login-form").style.display="block";
+	}
+
+
+</script>
+
+
+
+
+</body>
+</html>
